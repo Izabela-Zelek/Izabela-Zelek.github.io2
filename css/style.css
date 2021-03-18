@@ -1,0 +1,152 @@
+img{
+    width: 100%;
+}
+.button {
+    background-color:#000000;
+    border: none;
+    box-shadow: 0 9px#505050;
+    padding: 30px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.button:active {
+    box-shadow: 0 5px #3D3D3D;
+    transform: translateY(5px);
+}
+
+.button:hover {
+    background-color: #3F3F3F;
+}
+
+.red {
+    color: #FF0000;
+}
+
+.green {
+    color: #00FF00;
+}
+
+.blue {
+    color: #0000FF;
+}
+
+.yellow {
+    color: #FFFF00;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+.divTable{
+    position: relative;
+    top: 10px;
+    left: 160px;
+    display: table;
+    width: 25%;
+}
+
+.divTableRow{
+    display: table-row;
+}
+
+.divTableCell, .divTableHead {
+	border: none;
+	display: table-cell;
+	padding: 3px 5px;
+}
+
+.divTableHeading {
+	border: none;
+	display: table-header-group;
+	font-weight: bold;
+}
+
+.divTableFoot {
+	border: none;
+	display: table-footer-group;
+	font-weight: bold;
+}
+
+.divTableBody {
+	display: table-row-group;
+}
+
+.switch {
+    position: relative;
+    right: 200px;
+    display: inline-block;
+    width: 120px;
+    height: 68px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider::before {
+    position: absolute;
+   content: "";
+    height: 52px;
+    width: 52px;
+    left: 8px;
+    bottom: 8px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider::before {
+    -webkit-transform: translateX(52px);
+    -ms-transform: translateX(52px);
+    transform: translateX(52px);
+}
+
+.slider.round {
+    border-radius: 34px;
+  }
+
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  html, body{
+    height: 100%;
+  }
+
+  html{
+      display: table;
+      margin: auto;
+  }
+
+  body{
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      background-color: #75106F ;
+      color: white;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
